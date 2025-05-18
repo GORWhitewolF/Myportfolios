@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function addNumbers(){var a=document.getElementById("num1")
+        var b=document.getElementById("num2")
+        var c=document.getElementById("result")
+
+       
+        var aValue=Number(a.value)
+        var bValue=Number(b.value)
+        var total=aValue+bValue
+
+        console.log(total) 
+        c.textContent="Result is "+total
+        }
+    
+        
+    </script>
+    
+    <input type="text" id="num1" value="23">
+    <input type="text" id="num2" value="22">
+
+    <button onclick="addNumbers()">Add</button>
+<p id="result">Result</p>
+</body>
+</html> 
